@@ -6,7 +6,7 @@
 !.vscode/extensions.json
 
 # Dev virtual environment
-.cortex-dev/*
+.worms-dev/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

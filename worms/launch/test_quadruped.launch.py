@@ -58,7 +58,5 @@ def generate_launch_description():
             *make_worm("frog", 2, "front_right"),
             *make_worm("lion", 3, "back_left"),
             *make_worm("duck", 4, "front_left"),
-            *make_worm("seal", 5, "middle_left"),
-            *make_worm("hare", 6, "middle_right"),
         ]
     )

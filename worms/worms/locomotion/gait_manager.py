@@ -25,7 +25,7 @@ REGISTRY.register(
         package="worms",
         executable="gait_manager",
         node_name="gait_manager",
-        compatible_configs=["turtle", "hexapod"],
+        compatible_configs=["turtle", "hexapod", "quadruped"],
         description="Walk forwards with a fixed gait.",
         group="locomotion",
         args=[
@@ -246,7 +246,7 @@ class GaitManager(SubroutineNode):
 
             # Sort waypoints assuming the waypoint key is just a number
             gait[cfg_id] = [
-                waypoint
+                [math.radians(angle) for angle in waypoint]
                 for _, waypoint in sorted(
                     waypoints.items(), key=lambda item: int(item[0])
                 )

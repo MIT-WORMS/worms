@@ -1,0 +1,51 @@
+modules:
+  # Worms [1-10]
+  - module_id: 1
+    module_class: worm
+    namespace: pony
+
+  - module_id: 2
+    module_class: worm
+    namespace: frog
+
+  - module_id: 3
+    module_class: worm
+    namespace: lion
+
+  - module_id: 4
+    module_class: worm
+    namespace: duck
+
+  - module_id: 5
+    module_class: worm
+    namespace: seal
+
+  - module_id: 6
+    module_class: worm
+    namespace: bear
+
+  # Chassis [11-20]
+  - module_id: 11
+    module_class: turtle_chassis
+
+  - module_id: 12
+    module_class: hexapod_chassis
+
+  # Species modules [21+]
+  - module_id: 21
+    module_class: rubber_shoe
+
+  - module_id: 22
+    module_class: rubber_shoe
+
+  - module_id: 23
+    module_class: rubber_shoe
+
+  - module_id: 24
+    module_class: rubber_shoe
+
+  - module_id: 25
+    module_class: rubber_shoe
+
+  - module_id: 26
+    module_class: rubber_shoe

@@ -1,0 +1,55 @@
+configuration_name: quadruped
+modules:
+  # Hexapod body
+  - id: body
+    local_class: hexapod_chassis
+
+  # Two legs each side
+  - id: front_left_leg
+    local_class: worm
+    local_port: base
+    parent_id: body
+    parent_port: front_left
+
+  - id: front_right_leg
+    local_class: worm
+    local_port: base
+    parent_id: body
+    parent_port: front_right
+
+  - id: back_left_leg
+    local_class: worm
+    local_port: base
+    parent_id: body
+    parent_port: back_left
+
+  - id: back_right_leg
+    local_class: worm
+    local_port: base
+    parent_id: body
+    parent_port: back_right
+
+  # Shoe on each leg
+  - id: front_left_leg_shoe
+    local_class: rubber_shoe
+    local_port: center
+    parent_id: front_left_leg
+    parent_port: end
+
+  - id: front_right_leg_shoe
+    local_class: rubber_shoe
+    local_port: center
+    parent_id: front_right_leg
+    parent_port: end
+
+  - id: back_left_leg_shoe
+    local_class: rubber_shoe
+    local_port: center
+    parent_id: back_left_leg
+    parent_port: end
+
+  - id: back_right_leg_shoe
+    local_class: rubber_shoe
+    local_port: center
+    parent_id: back_right_leg
+    parent_port: end
